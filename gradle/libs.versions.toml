@@ -14,6 +14,7 @@ fastboard="2.1.0"
 obliviateinv = "4.3.0"
 mojangauth = "1.5.21"
 jbannotations = "24.1.0"
+nbtapi = "2.13.1"
 
 [libraries]
 jbannotations = { group = "org.jetbrains", name = "annotations", version.ref = "jbannotations" }
@@ -32,6 +33,7 @@ obliviateinvcore = {group = "com.github.hamza-cskn.obliviate-invs", name = "core
 obliviateinvadvancedslot = {group = "com.github.hamza-cskn.obliviate-invs", name = "advancedslot", version.ref = "obliviateinv"}
 obliviateinvpagination = {group = "com.github.hamza-cskn.obliviate-invs", name = "pagination", version.ref = "obliviateinv"}
 mojangauthlib = {group = "com.mojang", name = "authlib", version.ref = "mojangauth"}
+nbtapi = {group = "de.tr7zw", name = "item-nbt-api-plugin", version.ref = "nbtapi"}
 
 
 [plugins]
