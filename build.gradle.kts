@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "it.einjojo.akani"
-version = "1.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 
 
 repositories {
@@ -14,7 +14,12 @@ repositories {
     maven("https://repo.aikar.co/content/groups/aikar/")
     maven("https://repo.codemc.io/repository/maven-releases/")
     maven("https://mvn.lumine.io/repository/maven-public/")
-    maven("https://jitpack.io")
+    maven {
+        url = uri("https://jitpack.io")
+        content {
+            includeGroupByRegex("com\\.github\\.(ben-manes|hamza-cskn|retrooper|KalypzoSolutions)")
+        }
+    }
     maven("https://libraries.minecraft.net/")
 }
 
