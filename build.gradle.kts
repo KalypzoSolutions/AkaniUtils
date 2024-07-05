@@ -17,7 +17,7 @@ repositories {
     maven {
         url = uri("https://jitpack.io")
         content {
-            includeGroupByRegex("com\\.github\\.(ben-manes|hamza-cskn|retrooper|KalypzoSolutions)")
+            includeGroupByRegex("com\\.github\\.(ben-manes|hamza-cskn|retrooper|KalypzoSolutions|Anon8281).*")
         }
     }
     maven("https://libraries.minecraft.net/")
