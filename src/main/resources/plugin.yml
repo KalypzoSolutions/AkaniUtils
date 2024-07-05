@@ -1,0 +1,6 @@
+name: ShopSystem
+main: it.einjojo.akani.utils.AkaniUtilsPlugin
+version: ${version}
+author: EinJojo
+description: Utils
+api-version: 1.19
