@@ -27,13 +27,13 @@ dependencies {
     implementation(libs.jbannotations)
     compileOnly(libs.paper)
     compileOnly(libs.mojangauthlib)
-    api(libs.obliviateinvcore)
-    api(libs.obliviateinvpagination)
-    api(libs.obliviateinvadvancedslot)
-    api(libs.acf)
-    api(libs.caffeine)
-    api(libs.gson)
-    api(libs.nbtapi)
+    implementation(libs.obliviateinvpagination)
+    implementation(libs.obliviateinvadvancedslot)
+    implementation(libs.obliviateinvcore)
+    implementation(libs.acf)
+    implementation(libs.caffeine)
+    implementation(libs.gson)
+    implementation(libs.nbtapi)
     implementation(platform(libs.fawe))
     compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core")
     compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit") { isTransitive = false }
@@ -74,10 +74,11 @@ tasks {
     shadowJar {
         archiveFileName.set("${project.name}-${project.version}.jar")
         relocate("mc.obliviate", "it.einjojo.akani.util")
-        relocate("co.aikar", "it.einjojo.akani.util.commands")
+        relocate("co.aikar", "it.einjojo.akani.util")
         relocate("com.google.gson", "it.einjojo.akani.util.gson")
         relocate("com.github.ben-manes.caffeine", "it.einjojo.akani.util.caffeine")
         relocate("com.github.Anon8281.universalScheduler", "it.einjojo.akani.util.scheduler")
+        relocate("de.tr7zw.nbtapi", "it.einjojo.akani.util.nbtapi")
     }
 }
 
