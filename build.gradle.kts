@@ -72,7 +72,7 @@ tasks {
         dependsOn("shadowJar")
     }
     shadowJar {
-        archiveFileName.set("${project.name}-${project.version}.jar")
+        archiveFileName.set("${project.name}.jar")
         relocate("mc.obliviate", "it.einjojo.akani.util")
         relocate("co.aikar", "it.einjojo.akani.util")
         relocate("com.google.gson", "it.einjojo.akani.util.gson")
