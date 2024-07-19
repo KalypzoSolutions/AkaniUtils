@@ -38,4 +38,4 @@ nbtapi = {group = "de.tr7zw", name = "item-nbt-api-plugin", version.ref = "nbtap
 
 [plugins]
 shadow = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
-runpaper = { id = "xyz.jpenilla.run-paper", version = "2.2.3" }
+runpaper = { id = "xyz.jpenilla.run-paper", version = "2.3.0" }
