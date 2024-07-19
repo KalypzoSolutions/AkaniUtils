@@ -50,6 +50,16 @@ publishing {
             from(components["java"])
         }
     }
+    repositories {
+        maven {
+            name = "akani-repo"
+            url = uri("https://repo.akani.dev/releases")
+            credentials {
+                username = findProperty("AKANI_REPO_USER") as String? ?: System.getenv("AKANI_REPO_USER")
+                password = findProperty("AKANI_REPO_PASS") as String? ?: System.getenv("AKANI_REPO_PASS")
+            }
+        }
+    }
 }
 
 tasks {
