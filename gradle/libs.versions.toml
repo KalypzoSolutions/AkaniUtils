@@ -1,7 +1,7 @@
 [versions]
 # APIs
 paper-api = "1.19.4-R0.1-SNAPSHOT"
-fawe-bom = "1.42"
+fawe-bom = "1.47"
 luckperms = "5.4"
 akanicore = "1.3.2"
 acf = "0.5.1-SNAPSHOT"
