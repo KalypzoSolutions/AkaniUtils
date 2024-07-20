@@ -1,4 +1,4 @@
-name: ShopSystem
+name: AkaniUtils
 main: it.einjojo.akani.util.AkaniUtilsPlugin
 version: ${version}
 author: EinJojo
