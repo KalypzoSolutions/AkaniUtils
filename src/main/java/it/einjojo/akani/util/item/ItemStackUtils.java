@@ -1,8 +1,9 @@
 package it.einjojo.akani.util.item;
 
-import de.tr7zw.nbtapi.NBTCompound;
-import de.tr7zw.nbtapi.NBTContainer;
-import de.tr7zw.nbtapi.NBTItem;
+import de.tr7zw.changeme.nbtapi.NBT;
+import de.tr7zw.changeme.nbtapi.NBTCompound;
+import de.tr7zw.changeme.nbtapi.NBTContainer;
+import de.tr7zw.changeme.nbtapi.NBTItem;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -10,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -64,14 +66,15 @@ public class ItemStackUtils {
 
     /**
      * Converts an ItemStack to a NBT string
+     *
      * @param itemStack the ItemStack to convert
      * @return the NBT string
      */
     public static @NotNull String toNBTString(@NotNull ItemStack itemStack) {
-        return NBTItem.convertItemtoNBT(itemStack).toString();
+        return NBT.itemStackToNBT(itemStack).toString();
     }
 
     public static @NotNull ItemStack fromNBTString(@NotNull String itemString) {
-        return NBTItem.convertNBTtoItem((NBTCompound) new NBTContainer(itemString).getCompound());
+        return Objects.requireNonNull(NBT.itemStackFromNBT(NBT.parseNBT(itemString)));
     }
 }
