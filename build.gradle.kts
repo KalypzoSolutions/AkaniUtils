@@ -33,10 +33,9 @@ dependencies {
     implementation(libs.acf)
     implementation(libs.caffeine)
     implementation(libs.gson)
+    implementation(libs.jedis)
     implementation(libs.nbtapi)
-    implementation(platform(libs.fawe))
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core")
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit") { isTransitive = false }
+
     testImplementation(platform("org.junit:junit-bom:5.10.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
@@ -89,6 +88,7 @@ tasks {
         relocate("com.github.ben-manes.caffeine", "it.einjojo.akani.util.caffeine")
         relocate("com.github.Anon8281.universalScheduler", "it.einjojo.akani.util.scheduler")
         relocate("de.tr7zw.nbtapi", "it.einjojo.akani.util.nbtapi")
+        relocate("redis.clients", "it.einjojo.akani.util.jedis")
     }
 }
 
