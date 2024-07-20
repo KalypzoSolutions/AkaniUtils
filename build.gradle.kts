@@ -47,7 +47,7 @@ publishing {
             groupId = group.toString()
             artifactId = rootProject.name
             version = version
-            from(components["java"])
+            artifact(tasks.shadowJar)
         }
     }
     repositories {
