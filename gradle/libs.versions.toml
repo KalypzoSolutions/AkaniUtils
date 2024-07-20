@@ -29,7 +29,7 @@ obliviateinvcore = { group = "com.github.hamza-cskn.obliviate-invs", name = "cor
 obliviateinvadvancedslot = { group = "com.github.hamza-cskn.obliviate-invs", name = "advancedslot", version.ref = "obliviateinv" }
 obliviateinvpagination = { group = "com.github.hamza-cskn.obliviate-invs", name = "pagination", version.ref = "obliviateinv" }
 mojangauthlib = { group = "com.mojang", name = "authlib", version.ref = "mojangauth" }
-nbtapi = { group = "de.tr7zw", name = "item-nbt-api-plugin", version.ref = "nbtapi" }
+nbtapi = { group = "de.tr7zw", name = "item-nbt-api", version.ref = "nbtapi" }
 
 
 [plugins]

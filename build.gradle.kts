@@ -89,7 +89,7 @@ tasks {
         relocate("com.google.gson", "it.einjojo.akani.util.gson")
         relocate("com.github.ben-manes.caffeine", "it.einjojo.akani.util.caffeine")
         relocate("com.github.Anon8281.universalScheduler", "it.einjojo.akani.util.scheduler")
-        relocate("de.tr7zw.nbtapi", "it.einjojo.akani.util.nbtapi")
+        relocate("de.tr7zw.changeme.nbtapi", "it.einjojo.akani.util.nbtapi")
         relocate("redis.clients", "it.einjojo.akani.util.jedis")
     }
 }
