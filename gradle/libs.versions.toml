@@ -12,7 +12,7 @@ fastboard = "2.1.3"
 obliviateinv = "4.3.0"
 mojangauth = "1.11"
 jbannotations = "26.0.1"
-nbtapi = "2.13.2"
+nbtapi = "2.14.1"
 
 [libraries]
 jbannotations = { group = "org.jetbrains", name = "annotations", version.ref = "jbannotations" }
