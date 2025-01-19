@@ -3,7 +3,7 @@
 paper-api = "1.19.4-R0.1-SNAPSHOT"
 luckperms = "5.4"
 acf = "0.5.1-SNAPSHOT"
-caffeine = "3.1.8" # When changed update plugin.yml
+caffeine = "3.2.0" # When changed update plugin.yml
 packetevents = "2.3.0"
 gson = "2.11.0"
 jedis = "5.2.0"
