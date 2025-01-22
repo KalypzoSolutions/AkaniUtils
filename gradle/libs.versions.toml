@@ -11,7 +11,7 @@ hikaricp = "6.0.0"
 fastboard = "2.1.3"
 obliviateinv = "4.3.0"
 mojangauth = "1.11"
-jbannotations = "26.0.1"
+jbannotations = "26.0.2"
 nbtapi = "2.13.2"
 
 [libraries]
