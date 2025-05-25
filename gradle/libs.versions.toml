@@ -1,7 +1,7 @@
 [versions]
 # APIs
 paper-api = "1.19.4-R0.1-SNAPSHOT"
-luckperms = "5.4"
+luckperms = "5.5"
 acf = "0.5.1-SNAPSHOT"
 caffeine = "3.1.8" # When changed update plugin.yml
 packetevents = "2.3.0"
